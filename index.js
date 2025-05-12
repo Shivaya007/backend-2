@@ -18,7 +18,7 @@ const port = 5000;
 
 // ✅ Middleware
 app.use(express.json()); // Parse JSON requests
-app.use(cors({ origin: "http://localhost:3000", credentials: true })); // Allow frontend requests
+app.use(cors({ origin: "https://frontend-three-nu-81.vercel.app", credentials: true })); // Allow frontend requests
 
 // ✅ API Routes
 app.use("/api", require("./routes/CreateUser"));
